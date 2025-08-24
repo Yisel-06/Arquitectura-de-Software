@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Crear Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body style="background-color: #dfbf9f;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Mi App</a>
+      <div class="d-flex">
+        <a href="logout.php" class="btn btn-outline-light">Cerrar sesión</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container d-flex min-vh-100 align-items-center justify-content-center">
+    <div class="row w-100 shadow-lg rounded overflow-hidden" style="max-width: 800px; background: #fff;">
+
+      <!-- Columna izquierda: formulario -->
+      <div class="col-12 p-5">
+        <h2 class="mb-4 text-center">Crear Registro</h2>
+        <form>
+          <!-- Descripción -->
+          <div class="mb-3">
+            <label for="descripcion" class="form-label fw-semibold">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion" class="form-control" placeholder="Ingrese la descripción">
+          </div>
+
+          <!-- Estado -->
+          <div class="mb-3">
+            <label for="estado" class="form-label fw-semibold">Estado</label>
+            <select id="estado" name="estados_id" class="form-select">
+              <option value="">Seleccione un estado</option>
+              <option value="1">Activo</option>
+              <option value="2">Inactivo</option>
+            </select>
+          </div>
+
+          <!-- Categoría -->
+          <div class="mb-3">
+            <label for="categoria" class="form-label fw-semibold">Categoría</label>
+            <select id="categoria" name="categoria_id" class="form-select">
+              <option value="">Seleccione una categoría</option>
+              <option value="1">Educativo</option>
+              <option value="2">Recreativo</option>
+              <option value="3">Otro</option>
+            </select>
+          </div>
+
+          <!-- Rangos de Edad -->
+          <div class="mb-4">
+            <label for="rango" class="form-label fw-semibold">Rango de Edad</label>
+            <select id="rango" name="rangosedad_id" class="form-select">
+              <option value="">Seleccione un rango</option>
+              <option value="1">0 - 5 años</option>
+              <option value="2">6 - 12 años</option>
+              <option value="3">13 - 18 años</option>
+            </select>
+          </div>
+
+          <!-- Botón -->
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary btn-lg">CREAR</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

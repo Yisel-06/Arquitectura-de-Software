@@ -1,0 +1,44 @@
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: #2c2c2c;
+    justify-content: center;
+  }
+body {
+    background-color: #dfbf9f;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .form-control {
+    border-radius: 12px;
+    padding: 0.9rem 1.2rem;
+    border: 1px solid #ddd;
+  }
+  .form-control:focus {
+    border-color: #5c2c2c;
+    box-shadow: 0 0 0 0.2rem rgba(92,44,44,0.15);
+  }
+  .btn-custom {
+    background-color: #5c2c2c;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.9rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-family: 'MoodyAdolescent'; 
+  }
+  .btn-custom:hover {
+    background-color: #7b3f3f;
+  }
+  .shadow-card {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .img-side {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  
