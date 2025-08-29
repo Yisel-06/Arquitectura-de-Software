@@ -11,7 +11,7 @@
             <th>Apellidos</th>
         </tr>
         <?php
-            include "modelo/conexion.php";
+            include "Model/connection.php";
             $sql = $conexion->query("SELECT * FROM usuarios");
             while ($datos = $sql->fetch_object()) {
         ?>
