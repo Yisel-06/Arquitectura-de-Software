@@ -1,44 +1,84 @@
-  
-  h2 {
-    font-size: 2rem;
-    font-weight: normal;
-    color: #2c2c2c;
-    justify-content: center;
-  }
+/* Fondo y tipografía */
 body {
-    background-color: #dfbf9f;
-    font-family: 'Poppins', sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  background-color: #dfbf9f;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  .form-control {
-    border-radius: 12px;
-    padding: 0.9rem 1.2rem;
-    border: 1px solid #ddd;
-  }
-  .form-control:focus {
-    border-color: #5c2c2c;
-    box-shadow: 0 0 0 0.2rem rgba(92,44,44,0.15);
-  }
-  .btn-custom {
-    background-color: #5c2c2c;
-    color: #fff;
-    font-weight: 600;
-    padding: 0.9rem;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-    font-family: 'MoodyAdolescent'; 
-  }
-  .btn-custom:hover {
-    background-color: #7b3f3f;
-  }
-  .shadow-card {
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    border-radius: 16px;
-    overflow: hidden;
-  }
-  .img-side {
-    object-fit: cover;
-    height: 100%;
-  }
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
-  
+/* Inputs */
+input, 
+.form-control {
+  width: 100%;
+  padding: 1rem 1.2rem !important;
+  margin: 10px 0;
+  border: 1px solid #ddd !important;
+  border-radius: 12px !important;
+  font-size: 1rem !important;
+  box-sizing: border-box;
+  background-color: #fff; /* el campo sigue blanco */
+}
+
+input:focus, 
+.form-control:focus {
+  border-color: #ac7339 !important;
+  box-shadow: 0 0 0 0.2rem rgba(172,115,57,0.25) !important;
+  outline: none;
+}
+
+/* Botones */
+button, 
+.btn-custom {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ac7339;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover, 
+.btn-custom:hover {
+  background-color: #7b3f3f;
+}
+
+/* Mensajes (ejemplo en login) */
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.message a {
+  color: #ac7339;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+/* Imagen lateral (solo en registro) */
+.img-side {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 16px;
+}

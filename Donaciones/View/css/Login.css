@@ -1,69 +1,84 @@
+/* Fondo y tipografía */
 body {
   margin: 0;
   padding: 0;
   background-color: #dfbf9f;
-  font-family: Arial, sans-serif;
-
-  /* Centrar con flex */
+  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* toda la altura de la pantalla */
+  min-height: 100vh;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.login-page {
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  width: 350px;
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.login-page h2 {
-  margin-bottom: 20px;
-  font-family: 'Comic Neue', cursive;
+/* Inputs */
+input, 
+.form-control {
+  width: 100%;
+  padding: 1rem 1.2rem !important;
+  margin: 10px 0;
+  border: 1px solid #ddd !important;
+  border-radius: 12px !important;
+  font-size: 1rem !important;
+  box-sizing: border-box;
+  background-color: #fff; /* el campo sigue blanco */
 }
 
-.login-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+input:focus, 
+.form-control:focus {
+  border-color: #ac7339 !important;
+  box-shadow: 0 0 0 0.2rem rgba(172,115,57,0.25) !important;
   outline: none;
 }
 
-.login-form button {
+/* Botones */
+button, 
+.btn-custom {
   width: 100%;
-  padding: 12px;
-  background-color: #1c1c1c;
-  color: white;
-  font-weight: bold;
+  padding: 1rem;
+  background-color: #ac7339;
+  color: #fff;
+  font-weight: 600;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  transition: background 0.3s;
-  margin-top: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
 }
 
-.login-form button:hover {
-  background-color: #333;
+button:hover, 
+.btn-custom:hover {
+  background-color: #7b3f3f;
 }
 
+/* Mensajes (ejemplo en login) */
 .message {
   margin-top: 15px;
   font-size: 14px;
+  text-align: center;
 }
 
 .message a {
-  color: #1c1c1c;
+  color: #ac7339;
   font-weight: bold;
   text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+/* Imagen lateral (solo en registro) */
+.img-side {
+  object-fit: cover;
+  height: 100%;
+  border-radius: 16px;
 }

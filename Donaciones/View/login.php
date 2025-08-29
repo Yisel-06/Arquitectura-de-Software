@@ -6,7 +6,7 @@
   <title>Inicio de Sesión</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="login.html">
+  <link rel="stylesheet" href="View/css/Login.css">
 </head>
 <body>
   <div class="container d-flex min-vh-100 align-items-center justify-content-center">
@@ -18,14 +18,14 @@
         <form class="login-form">
           <input type="email" placeholder="Correo" class="form-control mb-3">
           <input type="password" placeholder="Contraseña" class="form-control mb-4">
-          <button type="submit" class="btn btn-primary w-100 mb-3">INGRESAR</button>
-          <p class="message text-center">¿No estás registrado? <a href="#">Registrarme</a></p>
+          <button type="submit" class="btn btn-primary w-100 mb-3" href="View/register.php">INGRESAR</button>
+          <p class="message text-center">¿No estás registrado? <a href="View/register.php">Registrarme</a></p>
         </form>
       </div>
 
       <!-- Columna derecha: Imagen -->
       <div class="col-md-6 p-0 d-none d-md-block">
-        <img src="C:\Users\Julián\Desktop\PROYECTO DONACIONES\imagenes\baby-5953965_1280.jpg" alt="Imagen de login" class="img-fluid h-100 w-100" style="object-fit: cover;">
+        <img src="View/img/Osito.jpg" alt="Imagen de login" class="img-fluid h-100 w-100" style="object-fit: cover;">
       </div>
 
     </div>
