@@ -10,6 +10,23 @@ body {
   min-height: 100vh;
 }
 
+.btn-custom {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff !important;
+  background-color: #ac7339;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Títulos */
 h2 {
   font-size: 2rem;

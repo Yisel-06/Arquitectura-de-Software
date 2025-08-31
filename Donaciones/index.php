@@ -1,13 +1,11 @@
 <?php
 
-require_once "Controller/CategoriaController.php";
+// require_once "Controller/CategoriaController.php";
 require_once "Controller/UsuarioController.php";
 
 $action = $_GET['action'] ?? 'home';
 
 switch ($action) {
-
-
 
     /* ========================
        CRUD USUARIOS
@@ -43,10 +41,11 @@ switch ($action) {
 
     /* PÁGINA DE INICIO */
     default:
-        echo "<h1>Bienvenido al Sistema de Donaciones</h1>";
-        echo "<ul>";
-        echo "<li><a href='index.php?action=usuarios'>👤 Gestionar Usuarios</a></li>";
-        echo "<li><a href='index.php?action=categorias'>📂 Gestionar Categorías</a></li>";
-        echo "</ul>";
+        include "View/login.php";
+        // echo "<h1>Bienvenido al Sistema de Donaciones</h1>";
+        // echo "<ul>";
+        // echo "<li><a href='index.php?action=usuarios'>👤 Gestionar Usuarios</a></li>";
+        // echo "<li><a href='index.php?action=categorias'>📂 Gestionar Categorías</a></li>";
+        // echo "</ul>";
         break;
 }

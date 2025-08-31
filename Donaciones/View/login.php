@@ -18,8 +18,8 @@
         <form class="login-form">
           <input type="email" placeholder="Correo" class="form-control mb-3">
           <input type="password" placeholder="Contraseña" class="form-control mb-4">
-          <button type="submit" class="btn btn-primary w-100 mb-3" href="View/register.php">INGRESAR</button>
-          <p class="message text-center">¿No estás registrado? <a href="View/register.php">Registrarme</a></p>
+          <button type="submit" class="btn-custom" href="View/register.php">INGRESAR</button>
+          <p class="message text-center">¿No estás registrado? <a href='index.php?action=crearUsuario'>Registrarme</a></p>
         </form>
       </div>
 
