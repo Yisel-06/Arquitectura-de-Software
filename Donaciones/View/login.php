@@ -11,13 +11,12 @@
 <body>
   <div class="container d-flex min-vh-100 align-items-center justify-content-center">
     <div class="row w-100 shadow-lg rounded overflow-hidden" style="max-width: 900px; background: #fff;">
-
-      <!-- Columna izquierda: Formulario -->
       <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
         <h2 class="mb-4 text-center">Inicio de sesión</h2>
-        <form class="login-form">
-          <input type="email" placeholder="Correo" class="form-control mb-3">
-          <input type="password" placeholder="Contraseña" class="form-control mb-4">
+        <?php if(isset($error)) echo "<p style='color:red'>$error</p>"; ?>
+        <form class="login-form"action="index.php?action=autenticar" method="POST">
+          <input type="email" placeholder="Correo" class="form-control mb-3" name="correo">
+          <input type="password" placeholder="Contraseña" class="form-control mb-4" name="contrasena">
           <button type="submit" class="btn-custom" href="View/register.php">INGRESAR</button>
           <p class="message text-center">¿No estás registrado? <a href='index.php?action=crearUsuario'>Registrarme</a></p>
         </form>

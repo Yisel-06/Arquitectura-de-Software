@@ -2,6 +2,7 @@
 
 // require_once "Controller/CategoriaController.php";
 require_once "Controller/UsuarioController.php";
+require_once "Controller/LoginController.php";
 
 $action = $_GET['action'] ?? 'home';
 
@@ -36,6 +37,21 @@ switch ($action) {
         } else {
             header("Location: index.php?action=usuarios");
         }
+        break;
+    
+    case "login":
+        $controller = new LoginController();
+        $controller->mostrarLogin();
+        break;
+
+    case "autenticar":
+        $controller = new LoginController();
+        $controller->autenticar();
+        break;
+
+    case "logout":
+        $controller = new LoginController();
+        $controller->logout();
         break;
 
 
