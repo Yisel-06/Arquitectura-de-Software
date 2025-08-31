@@ -1,43 +1,12 @@
 <?php
-// Requerimos los controladores
+
 require_once "Controller/CategoriaController.php";
 require_once "Controller/UsuarioController.php";
 
-// Capturamos la acción enviada por la URL, si no hay acción mostramos "home"
 $action = $_GET['action'] ?? 'home';
 
 switch ($action) {
 
-    /* ========================
-       CRUD CATEGORÍAS
-    ========================= */
-    case "categorias":
-        $controller = new CategoriaController();
-        $controller->index();
-        break;
-
-    case "crearCategoria":
-        $controller = new CategoriaController();
-        $controller->crear();
-        break;
-
-    case "editarCategoria":
-        $controller = new CategoriaController();
-        if (isset($_GET['id'])) {
-            $controller->editar($_GET['id']);
-        } else {
-            header("Location: index.php?action=categorias");
-        }
-        break;
-
-    case "eliminarCategoria":
-        $controller = new CategoriaController();
-        if (isset($_GET['id'])) {
-            $controller->eliminar($_GET['id']);
-        } else {
-            header("Location: index.php?action=categorias");
-        }
-        break;
 
 
     /* ========================
@@ -72,9 +41,7 @@ switch ($action) {
         break;
 
 
-    /* ========================
-       PÁGINA DE INICIO
-    ========================= */
+    /* PÁGINA DE INICIO */
     default:
         echo "<h1>Bienvenido al Sistema de Donaciones</h1>";
         echo "<ul>";
