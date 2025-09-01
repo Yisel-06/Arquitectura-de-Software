@@ -1,6 +1,5 @@
 <?php
 
-// require_once "Controller/CategoriaController.php";
 require_once "Controller/UsuarioController.php";
 require_once "Controller/LoginController.php";
 
